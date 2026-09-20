@@ -1,0 +1,11 @@
+[package]
+name = "url-shortner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.15.0"
+chrono = "0.4.45"
+dotenvy = "0.15.7"
+serde = { version = "1.0.229", features = ["derive"] }
+sqlx = { version = "0.9.0", default-features = false, features = ["postgres", "runtime-tokio", "tls-rustls-ring"] }
